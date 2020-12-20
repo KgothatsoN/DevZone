@@ -18,21 +18,34 @@
  @import 'bootstrap';
  
 .navbar, .home-page{
+	//Backgroun Gradient
  	//Gradient by @_ighosh @uigradients.com
 	background: #373B44;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  }    
- .navbar {
+ .navbar{
  	border: none;
  }
+ 
+ .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+ 	//Navigatoin Bar Styling
+	color: white;
+	&hover{
+		color: white;
+		opacity: .75;
+	}
+ }
+
  .home-page{
+ 	//Home page CSS
+ 	color: white;
 	margin-top: -20px;
 	padding-top: 50px;
 	padding-bottom: 100px;
  }
- h1,h2,h3{
- 	color: white;
+ body{
+ 	//Typography Styles
 	font-family: 'Montserrat', sans-serif;
  }
  
