@@ -13,6 +13,7 @@ class ContactsController < ApplicationController
       email = params[:contact][:email]
       comments = params[:contact][:comments]
       ContactMailer.contact_email(name, email, comments).deliver
+      #If all fields are filled in and saved to db then send out message
       flash[:success] = "Message Sent."
       redirect_to new_contact_path
     else
