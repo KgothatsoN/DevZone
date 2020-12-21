@@ -5,6 +5,7 @@ class ContactsController < ApplicationController
   end
   
   def create
+    #Save contact form with details to @contact {name: 'john', email: 'email@email.com' etc}
     @contact = Contact.new(contact_params)
     if @contact.save
       redirect_to new_contact_path, notice: "Message Sent."
@@ -13,6 +14,7 @@ class ContactsController < ApplicationController
     end
   end
   
+  #Security method, strong parameters
   private
     def contact_params
       params.require(:contact).permit(:name, :email, :comments)
