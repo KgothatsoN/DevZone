@@ -8,6 +8,11 @@ class ContactsController < ApplicationController
     #Save contact form with details to @contact {name: 'john', email: 'email@email.com' etc}
     @contact = Contact.new(contact_params)
     if @contact.save
+      #Save and retrieve contact form input then send them to contact mailer
+      name = params[:contact][:name]
+      email = params[:contact][:email]
+      comments = params[:contact][:comments]
+      ContactMailer.contact_email(name, email, comments).deliver
       flash[:success] = "Message Sent."
       redirect_to new_contact_path
     else
