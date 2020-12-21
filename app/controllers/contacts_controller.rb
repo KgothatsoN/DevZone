@@ -8,9 +8,11 @@ class ContactsController < ApplicationController
     #Save contact form with details to @contact {name: 'john', email: 'email@email.com' etc}
     @contact = Contact.new(contact_params)
     if @contact.save
-      redirect_to new_contact_path, notice: "Message Sent."
+      flash[:success] = "Message Sent."
+      redirect_to new_contact_path
     else
-      redirect_to new_contact_path, notice: "Error!"
+      flash[:error] = @contact.errors.full_messages.join(", ")
+      redirect_to new_contact_path
     end
   end
   
