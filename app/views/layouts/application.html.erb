@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text-javascript' %>
+    <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= tag :meta, :name => "stripe-public-key", :content => STRIPE_PUBLIC_KEY %>
   </head>
