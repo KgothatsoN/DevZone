@@ -17,7 +17,7 @@
         </h4>
         <h2 class="text-center"> FREE!!!</h2>
         <br>
-        <%= link_to "Basic Sign Up", "#", class: "bt btn-primary btn-lg btn-block text-center" %>
+        <%= link_to "Basic Sign Up", new_user_registration_path(subscription: @basic_subscription.id), class: "bt btn-primary btn-lg btn-block text-center" %>
       </div>
     </div>
     
@@ -35,7 +35,7 @@
         </h4>
         <h2 class="text-center"> $9.99/month</h2>
         <br>
-        <%= link_to "Premium Sign Up", "#", class: "bt btn-warning btn-lg btn-block text-center" %>
+        <%= link_to "Premium Sign Up", new_user_registration_path(subscription: @pro_subscription.id), class: "bt btn-warning btn-lg btn-block text-center" %>
       </div>
     </div>
   </div>
