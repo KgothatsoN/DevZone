@@ -1,4 +1,6 @@
 class Users::RegistrationsController < Devise::RegistrationsController
+  before_action :select_subscription, only: :new
+  
   #Before saving user to DB check which form they are on and save the parameter
   def create
     premium = "prod_IcbXmtGhBK5dph"
@@ -15,4 +17,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
       end
     end
   end
+  
+  private
+    def select_subscription
+      unless (params[:subscription] == '1' || params[:subscription] == '2')
+        flash[:notice] = "Please select a subscription plan to sign up."
+        redirect_to root_url
+      end
+    end
 end
