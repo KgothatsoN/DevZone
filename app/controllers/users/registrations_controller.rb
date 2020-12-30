@@ -1,10 +1,9 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   before_action :select_subscription, only: :new
-  
   #Before saving user to DB check which form they are on and save the parameter
+  
   def create
     premium = "prod_IcbXmtGhBK5dph"
-    
     super do |resource|
       if params[:subscription]
         resource.subscription_id = params[:subscription]
