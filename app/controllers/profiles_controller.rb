@@ -1,4 +1,9 @@
 class ProfilesController < ApplicationController
+  # Before a user can view profiles verify they are registered and logged in
+  before_action :authenticate_user!
+  # Allows users to only edit their profile
+  before_action :only_current_user
+  
   # GET request to /users/:user_id/profile/new
   def new
     # Render blank profile details form
@@ -47,4 +52,10 @@ class ProfilesController < ApplicationController
     def profile_params
       params.require(:profile).permit(:first_name, :last_name, :avatar, :occupation, :telephone_number, :email, :about)
     end 
+    
+    def only_current_user
+      @user = User.find(params[:user_id])
+      # If user is trying to access another users profile, redirect them to the homepage
+      redirect_to (root_url) unless @user == current_user
+    end
 end
