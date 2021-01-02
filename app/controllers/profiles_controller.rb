@@ -20,6 +20,11 @@ class ProfilesController < ApplicationController
     end 
   end 
   
+  # GET request to /users/:user_id/profile/edit
+  def edit
+    @user = User.find(params[:user_id])
+    @profile = @user.profile
+  end
   
   
   private
