@@ -26,6 +26,21 @@ class ProfilesController < ApplicationController
     @profile = @user.profile
   end
   
+  #PUT request to /users/:user_id/profile
+  def update
+    # Retrieve user from DB using ID
+    @user = User.find(params[:user_id])
+    @profile = @user.profile
+    # Mass assign edited profile attributes and update
+    if @profile.update_attributes(profile_params)
+      flash[:success] = "Updated Profile!"
+      #Redirect user to updated profile page
+      redirect_to user_path(params[:user_id])
+    else
+      render action: :edit
+      flash[:error] = "Error! Update Unsuccessful"
+    end
+  end
   
   private
     # Whitelist profile fields from profile form
