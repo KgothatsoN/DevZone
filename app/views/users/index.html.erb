@@ -17,7 +17,12 @@
                   <%= link_to user do %>
                     <h2><%= user.profile.first_name%> <%= user.profile.last_name%></h2>
                   <%end%>
-                  <p><%= user.profile.occupation%></p>
+                  <p>
+                    <%= user.profile.occupation%>
+                    <% if user.subscription_id == 2%>
+                      <span class="label label-danger">Premium</span>
+                    <%end%>
+                  </p>
                 </div>
               </div>
             </li>
