@@ -22,22 +22,29 @@
 body{
  //Typography Styles
  font-family: 'Montserrat', sans-serif;
-}
 
+}
+.parallex	{
+	background: asset-url('background.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 20%;
+}
 .navbar, .home-page{
-	//Background Gradient
-	//Gradient by @_ighosh @uigradients.com
-	background: #373B44;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	// //Background Gradient
+	// //Gradient by @_ighosh @uigradients.com
+	// background: #373B44;  /* fallback for old browsers */
+	// background: -webkit-linear-gradient(to left, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+	// background: linear-gradient(to left, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #131313;
 }
-
 //Navigatoin Bar Styling
-.navbar{
+.navbar {
 	border: none;
+	background: #2b2b2b;
 }
 
-.navbar-brand{
+.navbar-brand	{
 	font-weight:800;
 }
 
@@ -51,7 +58,7 @@ body{
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: white;
+	background-color: #131313;
 }
 
 .navbar-default .navbar-toggle {
@@ -60,7 +67,14 @@ body{
 		background-color: #4286f4;	
  }
 }
-
+.btn-primary	{
+	background: #dc191b;
+	border-color: #dc191b;
+	&:focus, &:hover{
+		background-color: #dc191bd6;
+		border-color: #dc191bd6;
+ }
+}
 //Home page CSS
 .home-page{
 	color: white;
@@ -73,15 +87,18 @@ body{
 	margin-top: 5em;
 }
 
+
 //Sign Up for styling
 .form-spacing	{
 	padding-top: 7em;
 }
 
 .alert-container {
-	position: absolute;
+	position: fixed;
 	width: 100%;
-	padding: 0px;
+	// padding: 0px;
+	// height: 100%;
+	
 }
 .alert-notice, .alert-alert {
 	color: white;
@@ -89,6 +106,7 @@ body{
   background: #ffffff30;
   border-color: #ffffff47;
   margin-top: -15px;
+  
 }
 
 #error_explanation h2 {
@@ -104,3 +122,7 @@ body{
 	height: 200px;
 	resize: none;
 }
+
+// .homepage-well	{
+// 	background: #45454a;
+// }

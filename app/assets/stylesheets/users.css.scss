@@ -7,10 +7,7 @@
   display: inline-block;
   width: 30px;
   height:  30px;
-  border: 2px solid #2e6da4;
-  border-radius: 4px;
-  background-color: #337ab7;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -22,13 +19,13 @@
 }
 
 .well.profile-about {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #0000009e;
+  border-color: #0000009e;
 }
 
 .well.contact-info {
-  background: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #0000009e;
+  border-color: #0000009e;
 }
 
 
@@ -42,4 +39,8 @@
 
 .well.white-bg {
   background: white;
+}
+
+.label-danger {
+    background-color: #dc191b;
 }

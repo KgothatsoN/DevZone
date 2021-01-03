@@ -14,8 +14,8 @@
       <% if current_user.subscription_id == 2 %>
         <div class="well profile-block contact-info">
           <h3>Contact Info</h3>
-          <p><%= @user.profile.telephone_number%></p>
-          <p><%= @user.profile.email%></p>
+          <p>Mobile: <%= @user.profile.telephone_number%></p>
+          <p>Email: <%= @user.profile.email%></p>
         </div>
       <%end%>
       
