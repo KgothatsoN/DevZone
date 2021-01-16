@@ -18,6 +18,11 @@
 @import 'bootstrap';
 @import "font-awesome-sprockets";
 @import "font-awesome";
+// Mobile Responsive
+@viewport {
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
 //Body Styling
 body{
  //Typography Styles
@@ -58,13 +63,13 @@ body{
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #131313;
+	background-color: #fff;
 }
 
 .navbar-default .navbar-toggle {
 	border: 2px solid white;
 	&:focus, &:hover{
-		background-color: #4286f4;	
+		background-color: #131313;	
  }
 }
 .btn-primary	{
@@ -87,6 +92,10 @@ body{
 	margin-top: 5em;
 }
 
+.well	{
+	margin: auto;
+	margin-top: 1em;
+}
 
 //Sign Up for styling
 .form-spacing	{
@@ -122,7 +131,3 @@ body{
 	height: 200px;
 	resize: none;
 }
-
-// .homepage-well	{
-// 	background: #45454a;
-// }
