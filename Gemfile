@@ -46,6 +46,9 @@ gem 'stripe', '1.48.0'
 #Figardo for ENV variables
 gem 'figaro', '1.1.1'
 
+#SD SDK for image handling
+gem 'aws-sdk', '~> 2.3'
+
 #Use Paperclip for image upload
 gem 'paperclip', '4.3.6'
 group :development, :test do
