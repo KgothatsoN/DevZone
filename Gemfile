@@ -47,7 +47,7 @@ gem 'stripe', '1.48.0'
 gem 'figaro', '1.1.1'
 
 #SD SDK for image handling
-gem 'aws-sdk', '< 2.0'
+gem 'aws-sdk-v1'
 
 #Use Paperclip for image upload
 gem 'paperclip', '4.3.6'
