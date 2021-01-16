@@ -21,7 +21,7 @@ DevZone is a membership based social networking site, it is purpose is simple, c
 * Contact Mailing
   * DevZone's mailing system utilises Mailgun and Heroku's integrated functionality.
 * Gems
-  * Gems utilised include but are not limited to: Figaro, Devise, Hirb, FOSS, Thoughtbot Paperclip
+  * Gems utilised include but are not limited to: Figaro, Devise, Hirb, FOSS, Thoughtbot Paperclip, AWS SDK
 
 
 **Version 1.0.0**
