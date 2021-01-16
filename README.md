@@ -2,9 +2,3 @@
 - Kgothatso Ntuli <kg.otha@hotmail.com> -
 
 Software-as-a-Service Ruby on Rails App
-
-
-
-
-
-Licensed under [MIT License](LICENSE)
