@@ -23,7 +23,7 @@ DevZone is a membership based social networking site, it is purpose is simple, c
 * Gems
   * Gems utilised include but are not limited to: Figaro, Devise, Hirb, FOSS, Thoughtbot Paperclip, AWS SDK.
 * AWS S3
- * With Heroku not handing static objects such as images, S3 bucket is used to store user profile avatar.
+  * With Heroku not handing static objects such as images, S3 bucket is used to store user profile avatar.
 
 
 **Version 1.0.0**
