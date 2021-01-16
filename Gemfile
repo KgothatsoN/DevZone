@@ -46,11 +46,14 @@ gem 'stripe', '1.48.0'
 #Figardo for ENV variables
 gem 'figaro', '1.1.1'
 
-#SD SDK for image handling
+#AWS SDK for image handling
 gem 'aws-sdk', '< 2.0'
+
+
 
 #Use Paperclip for image upload
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.13'
