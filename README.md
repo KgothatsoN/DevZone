@@ -1,7 +1,9 @@
 # [DevZone](https://nameless-reaches-54809.herokuapp.com/)
 Live Deployment [Here](https://nameless-reaches-54809.herokuapp.com/)
+![](devzoneproject.png)
 ---
 Software-as-a-Service Ruby on Rails App
+---
 Welcome to DevZone, fully responsive Software-as-a-Service (SaaS) Ruby on Rails web app dedicated to bringing enthusiastic developers, budding entrepreneur and tenacious recruiters together.
 
 # What is DevZone
